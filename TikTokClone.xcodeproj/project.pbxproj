@@ -16,6 +16,8 @@
 		4EF68EDB2B1105F2004476EA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EDA2B1105F2004476EA /* FeedCell.swift */; };
 		4EF68EDD2B1118DE004476EA /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EDC2B1118DE004476EA /* ExploreView.swift */; };
 		4EF68EDF2B1118F9004476EA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EDE2B1118F9004476EA /* UserCell.swift */; };
+		4EF68EE12B1143F0004476EA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EE02B1143F0004476EA /* NotificationView.swift */; };
+		4EF68EE32B114401004476EA /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EE22B114401004476EA /* NotificationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		4EF68EDA2B1105F2004476EA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		4EF68EDC2B1118DE004476EA /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		4EF68EDE2B1118F9004476EA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		4EF68EE02B1143F0004476EA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		4EF68EE22B114401004476EA /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 		4EF68ED12B10F6BF004476EA /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68EE02B1143F0004476EA /* NotificationView.swift */,
+				4EF68EE22B114401004476EA /* NotificationCell.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -283,6 +289,8 @@
 				4EF68ED92B1101CE004476EA /* FeedView.swift in Sources */,
 				4EF68EDB2B1105F2004476EA /* FeedCell.swift in Sources */,
 				4EF68EBB2B10E071004476EA /* ContentView.swift in Sources */,
+				4EF68EE32B114401004476EA /* NotificationCell.swift in Sources */,
+				4EF68EE12B1143F0004476EA /* NotificationView.swift in Sources */,
 				4EF68EB92B10E071004476EA /* TikTokCloneApp.swift in Sources */,
 				4EF68EDD2B1118DE004476EA /* ExploreView.swift in Sources */,
 				4EF68ED72B10F9B2004476EA /* MainTabView.swift in Sources */,
