@@ -19,10 +19,12 @@ struct FeedCell: View {
                      Text("Post \(post)")
                          .foregroundStyle(.white)
                  }
+            
             VStack{
                 Spacer()
                 
                 HStack(alignment: .bottom) {
+                    
                     VStack(alignment: .leading) {
                         Text("yolima.torres")
                             .fontWeight(.semibold)

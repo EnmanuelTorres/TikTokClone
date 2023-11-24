@@ -14,6 +14,8 @@
 		4EF68ED72B10F9B2004476EA /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68ED62B10F9B2004476EA /* MainTabView.swift */; };
 		4EF68ED92B1101CE004476EA /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68ED82B1101CE004476EA /* FeedView.swift */; };
 		4EF68EDB2B1105F2004476EA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EDA2B1105F2004476EA /* FeedCell.swift */; };
+		4EF68EDD2B1118DE004476EA /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EDC2B1118DE004476EA /* ExploreView.swift */; };
+		4EF68EDF2B1118F9004476EA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EDE2B1118F9004476EA /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		4EF68ED62B10F9B2004476EA /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		4EF68ED82B1101CE004476EA /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		4EF68EDA2B1105F2004476EA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		4EF68EDC2B1118DE004476EA /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		4EF68EDE2B1118F9004476EA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 		4EF68ECE2B10F6BA004476EA /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68EDC2B1118DE004476EA /* ExploreView.swift */,
+				4EF68EDE2B1118F9004476EA /* UserCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -278,7 +284,9 @@
 				4EF68EDB2B1105F2004476EA /* FeedCell.swift in Sources */,
 				4EF68EBB2B10E071004476EA /* ContentView.swift in Sources */,
 				4EF68EB92B10E071004476EA /* TikTokCloneApp.swift in Sources */,
+				4EF68EDD2B1118DE004476EA /* ExploreView.swift in Sources */,
 				4EF68ED72B10F9B2004476EA /* MainTabView.swift in Sources */,
+				4EF68EDF2B1118F9004476EA /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
