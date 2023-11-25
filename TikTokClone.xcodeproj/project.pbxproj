@@ -18,6 +18,12 @@
 		4EF68EDF2B1118F9004476EA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EDE2B1118F9004476EA /* UserCell.swift */; };
 		4EF68EE12B1143F0004476EA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EE02B1143F0004476EA /* NotificationView.swift */; };
 		4EF68EE32B114401004476EA /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EE22B114401004476EA /* NotificationCell.swift */; };
+		4EF68EE52B114F7F004476EA /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EE42B114F7F004476EA /* CurrentUserProfileView.swift */; };
+		4EF68EE72B115045004476EA /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EE62B115045004476EA /* ProfileHeaderView.swift */; };
+		4EF68EE92B115067004476EA /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EE82B115067004476EA /* PostGridView.swift */; };
+		4EF68EED2B1155A6004476EA /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EEC2B1155A6004476EA /* UserStatView.swift */; };
+		4EF68EEF2B1171ED004476EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EEE2B1171ED004476EA /* Post.swift */; };
+		4EF68EF42B11738C004476EA /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EF32B11738C004476EA /* FeedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,12 @@
 		4EF68EDE2B1118F9004476EA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4EF68EE02B1143F0004476EA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		4EF68EE22B114401004476EA /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		4EF68EE42B114F7F004476EA /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		4EF68EE62B115045004476EA /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		4EF68EE82B115067004476EA /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		4EF68EEC2B1155A6004476EA /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		4EF68EEE2B1171ED004476EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4EF68EF32B11738C004476EA /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,7 @@
 		4EF68EC82B10F5E5004476EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68EEE2B1171ED004476EA /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +186,9 @@
 		4EF68ED02B10F6BD004476EA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68EEA2B11552D004476EA /* Components */,
+				4EF68EEB2B115547004476EA /* View */,
+				4EF68EE42B114F7F004476EA /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -189,8 +205,9 @@
 		4EF68ED22B10F6C6004476EA /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				4EF68ED82B1101CE004476EA /* FeedView.swift */,
-				4EF68EDA2B1105F2004476EA /* FeedCell.swift */,
+				4EF68EF22B1172D2004476EA /* Service */,
+				4EF68EF12B1172D0004476EA /* View */,
+				4EF68EF02B1172C5004476EA /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -214,6 +231,47 @@
 			children = (
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4EF68EEA2B11552D004476EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4EF68EE82B115067004476EA /* PostGridView.swift */,
+				4EF68EE62B115045004476EA /* ProfileHeaderView.swift */,
+				4EF68EEC2B1155A6004476EA /* UserStatView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4EF68EEB2B115547004476EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EF68EF02B1172C5004476EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EF68EF32B11738C004476EA /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EF68EF12B1172D0004476EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EF68ED82B1101CE004476EA /* FeedView.swift */,
+				4EF68EDA2B1105F2004476EA /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EF68EF22B1172D2004476EA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +344,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF68EE52B114F7F004476EA /* CurrentUserProfileView.swift in Sources */,
 				4EF68ED92B1101CE004476EA /* FeedView.swift in Sources */,
+				4EF68EE72B115045004476EA /* ProfileHeaderView.swift in Sources */,
+				4EF68EED2B1155A6004476EA /* UserStatView.swift in Sources */,
 				4EF68EDB2B1105F2004476EA /* FeedCell.swift in Sources */,
+				4EF68EF42B11738C004476EA /* FeedViewModel.swift in Sources */,
+				4EF68EEF2B1171ED004476EA /* Post.swift in Sources */,
 				4EF68EBB2B10E071004476EA /* ContentView.swift in Sources */,
 				4EF68EE32B114401004476EA /* NotificationCell.swift in Sources */,
 				4EF68EE12B1143F0004476EA /* NotificationView.swift in Sources */,
 				4EF68EB92B10E071004476EA /* TikTokCloneApp.swift in Sources */,
+				4EF68EE92B115067004476EA /* PostGridView.swift in Sources */,
 				4EF68EDD2B1118DE004476EA /* ExploreView.swift in Sources */,
 				4EF68ED72B10F9B2004476EA /* MainTabView.swift in Sources */,
 				4EF68EDF2B1118F9004476EA /* UserCell.swift in Sources */,
