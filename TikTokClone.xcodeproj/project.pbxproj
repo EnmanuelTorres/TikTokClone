@@ -25,6 +25,9 @@
 		4EF68EEF2B1171ED004476EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EEE2B1171ED004476EA /* Post.swift */; };
 		4EF68EF42B11738C004476EA /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EF32B11738C004476EA /* FeedViewModel.swift */; };
 		4EF68EF62B117C01004476EA /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EF52B117C01004476EA /* CustomVideoPlayer.swift */; };
+		4EF68EFD2B14E933004476EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EFC2B14E933004476EA /* LoginView.swift */; };
+		4EF68EFF2B14E946004476EA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EFE2B14E946004476EA /* RegistrationView.swift */; };
+		4EF68F012B14EE57004476EA /* StandardTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F002B14EE57004476EA /* StandardTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		4EF68EEE2B1171ED004476EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4EF68EF32B11738C004476EA /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		4EF68EF52B117C01004476EA /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		4EF68EFC2B14E933004476EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4EF68EFE2B14E946004476EA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		4EF68F002B14EE57004476EA /* StandardTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		4EF68EC62B10F5D5004476EA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68F002B14EE57004476EA /* StandardTextFieldModifier.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -232,6 +239,11 @@
 		4EF68ED52B10F6CD004476EA /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68EFB2B14E8EA004476EA /* Model */,
+				4EF68EFA2B14E8E7004476EA /* Protocols */,
+				4EF68EF92B14E8E0004476EA /* Service */,
+				4EF68EF82B14E8D3004476EA /* View */,
+				4EF68EF72B14E8D1004476EA /* VieModel */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -275,6 +287,43 @@
 			children = (
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		4EF68EF72B14E8D1004476EA /* VieModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VieModel;
+			sourceTree = "<group>";
+		};
+		4EF68EF82B14E8D3004476EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EF68EFC2B14E933004476EA /* LoginView.swift */,
+				4EF68EFE2B14E946004476EA /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EF68EF92B14E8E0004476EA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4EF68EFA2B14E8E7004476EA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4EF68EFB2B14E8EA004476EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +399,7 @@
 				4EF68EE52B114F7F004476EA /* CurrentUserProfileView.swift in Sources */,
 				4EF68EF62B117C01004476EA /* CustomVideoPlayer.swift in Sources */,
 				4EF68ED92B1101CE004476EA /* FeedView.swift in Sources */,
+				4EF68EFF2B14E946004476EA /* RegistrationView.swift in Sources */,
 				4EF68EE72B115045004476EA /* ProfileHeaderView.swift in Sources */,
 				4EF68EED2B1155A6004476EA /* UserStatView.swift in Sources */,
 				4EF68EDB2B1105F2004476EA /* FeedCell.swift in Sources */,
@@ -357,7 +407,9 @@
 				4EF68EEF2B1171ED004476EA /* Post.swift in Sources */,
 				4EF68EBB2B10E071004476EA /* ContentView.swift in Sources */,
 				4EF68EE32B114401004476EA /* NotificationCell.swift in Sources */,
+				4EF68EFD2B14E933004476EA /* LoginView.swift in Sources */,
 				4EF68EE12B1143F0004476EA /* NotificationView.swift in Sources */,
+				4EF68F012B14EE57004476EA /* StandardTextFieldModifier.swift in Sources */,
 				4EF68EB92B10E071004476EA /* TikTokCloneApp.swift in Sources */,
 				4EF68EE92B115067004476EA /* PostGridView.swift in Sources */,
 				4EF68EDD2B1118DE004476EA /* ExploreView.swift in Sources */,
