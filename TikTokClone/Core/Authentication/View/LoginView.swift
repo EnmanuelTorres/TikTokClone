@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
+    @StateObject var viewModel = LoginViewModel(authService: AuthService())
     
     var body: some View {
         NavigationStack {
@@ -45,7 +46,9 @@ struct LoginView: View {
                 }
                 
                 //login button
-                Button(action: {print("DEBUG: registra") }, label: {
+                Button{
+                    Task{await viewModel.login(withEmail: email, password: password)}
+                } label: {
                     Text("Login")
                         .font(.subheadline)
                         .fontWeight(.semibold)
@@ -53,7 +56,7 @@ struct LoginView: View {
                         .frame(width: 350, height: 44)
                         .background(.pink)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
-                })
+                }
                 .padding(.vertical)
                 .disabled(!formIsValid)
                 .opacity(formIsValid ? 1 : 0.7)

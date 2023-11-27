@@ -40,7 +40,7 @@ struct FeedView: View {
         
         let item = AVPlayerItem(url: URL(string: FirstPost.VideoUrl)! )
         player.replaceCurrentItem(with: item)
-        
+        player.play()
         
     }
     
@@ -51,6 +51,7 @@ struct FeedView: View {
         }
         
         player.replaceCurrentItem(with: nil)
+        
         if player.timeControlStatus == .paused {
             player.play()
         }

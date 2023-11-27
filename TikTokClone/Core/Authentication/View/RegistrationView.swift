@@ -13,6 +13,7 @@ struct RegistrationView: View {
     @State private var fullName = ""
     @State private var username = ""
     @Environment(\.dismiss) var dismiss
+    @StateObject var viewModel = RegistrationViewModel(authService: AuthService())
     
     var body: some View {
         VStack {
@@ -42,7 +43,13 @@ struct RegistrationView: View {
                     .textInputAutocapitalization(.never)
                     .modifier(StandardTextFieldModifier())
                 
-                Button{ print("DEBUG: Sign up")
+                Button{ 
+                    Task {
+                        await  viewModel.createUser(withEmail: email,
+                                                    password: password,
+                                                    username: username,
+                                                    fullName: fullName)
+                    }
                 } label: {
                     Text("Sign up")
                         .font(.subheadline)
