@@ -20,13 +20,10 @@ struct FeedView: View {
                 ForEach(viewModel.posts) { post in
                     FeedCell(post: post, player: player)
                         .id(post.id)
+                        .onAppear{playInitialVideoIfNecessary() }
                 }
             }
             .scrollTargetLayout()
-        }
-        .onAppear {
-            print("hey")
-            player.play()
         }
         .scrollPosition(id: $scrollPosition)
         .scrollTargetBehavior(.paging)
@@ -36,6 +33,17 @@ struct FeedView: View {
         }
     }
     
+    func playInitialVideoIfNecessary(){
+        guard scrollPosition == nil, let FirstPost = viewModel.posts.first else {
+            return
+        }
+        
+        let item = AVPlayerItem(url: URL(string: FirstPost.VideoUrl)! )
+        player.replaceCurrentItem(with: item)
+        
+        
+    }
+    
     func playVideoOnChangeOfScrollPosition(postId: String?) {
         guard let currentPost = viewModel.posts.first(where: { $0.id == postId } ) else {
             return
@@ -43,6 +51,11 @@ struct FeedView: View {
         }
         
         player.replaceCurrentItem(with: nil)
+        if player.timeControlStatus == .paused {
+            player.play()
+        }
+            
+        
         let playerItem = AVPlayerItem(url: URL(string: currentPost.VideoUrl)!)
         
         player.replaceCurrentItem(with: playerItem)
