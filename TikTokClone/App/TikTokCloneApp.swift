@@ -11,7 +11,11 @@ import SwiftUI
 struct TikTokCloneApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+          //  MainTabView()
+            
+         //   LoginView()
+            
+            RegistrationView()
         }
     }
 }

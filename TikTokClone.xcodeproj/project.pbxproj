@@ -28,6 +28,7 @@
 		4EF68EFD2B14E933004476EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EFC2B14E933004476EA /* LoginView.swift */; };
 		4EF68EFF2B14E946004476EA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EFE2B14E946004476EA /* RegistrationView.swift */; };
 		4EF68F012B14EE57004476EA /* StandardTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F002B14EE57004476EA /* StandardTextFieldModifier.swift */; };
+		4EF68F032B1505F9004476EA /* AuthenticationFormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F022B1505F9004476EA /* AuthenticationFormProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		4EF68EFC2B14E933004476EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4EF68EFE2B14E946004476EA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		4EF68F002B14EE57004476EA /* StandardTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTextFieldModifier.swift; sourceTree = "<group>"; };
+		4EF68F022B1505F9004476EA /* AuthenticationFormProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFormProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +317,7 @@
 		4EF68EFA2B14E8E7004476EA /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68F022B1505F9004476EA /* AuthenticationFormProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				4EF68EF42B11738C004476EA /* FeedViewModel.swift in Sources */,
 				4EF68EEF2B1171ED004476EA /* Post.swift in Sources */,
 				4EF68EBB2B10E071004476EA /* ContentView.swift in Sources */,
+				4EF68F032B1505F9004476EA /* AuthenticationFormProtocol.swift in Sources */,
 				4EF68EE32B114401004476EA /* NotificationCell.swift in Sources */,
 				4EF68EFD2B14E933004476EA /* LoginView.swift in Sources */,
 				4EF68EE12B1143F0004476EA /* NotificationView.swift in Sources */,

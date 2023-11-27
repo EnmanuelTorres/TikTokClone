@@ -45,7 +45,7 @@ struct LoginView: View {
                 }
                 
                 //login button
-                Button(action: {print("DEBUG: Login") }, label: {
+                Button(action: {print("DEBUG: registra") }, label: {
                     Text("Login")
                         .font(.subheadline)
                         .fontWeight(.semibold)
@@ -55,7 +55,8 @@ struct LoginView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 })
                 .padding(.vertical)
-                
+                .disabled(!formIsValid)
+                .opacity(formIsValid ? 1 : 0.7)
                 Spacer()
                 
                 //go to sign in
@@ -78,6 +79,16 @@ struct LoginView: View {
             }
         }
     }
+}
+
+// MARK: AuthenticationFormProtocol
+
+extension LoginView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty && email.contains("@") && !password.isEmpty
+    }
+    
+    
 }
 
 #Preview {
