@@ -24,6 +24,7 @@
 		4EF68EED2B1155A6004476EA /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EEC2B1155A6004476EA /* UserStatView.swift */; };
 		4EF68EEF2B1171ED004476EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EEE2B1171ED004476EA /* Post.swift */; };
 		4EF68EF42B11738C004476EA /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EF32B11738C004476EA /* FeedViewModel.swift */; };
+		4EF68EF62B117C01004476EA /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68EF52B117C01004476EA /* CustomVideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		4EF68EEC2B1155A6004476EA /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		4EF68EEE2B1171ED004476EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4EF68EF32B11738C004476EA /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		4EF68EF52B117C01004476EA /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 		4EF68ED32B10F6C8004476EA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68EF52B117C01004476EA /* CustomVideoPlayer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF68EE52B114F7F004476EA /* CurrentUserProfileView.swift in Sources */,
+				4EF68EF62B117C01004476EA /* CustomVideoPlayer.swift in Sources */,
 				4EF68ED92B1101CE004476EA /* FeedView.swift in Sources */,
 				4EF68EE72B115045004476EA /* ProfileHeaderView.swift in Sources */,
 				4EF68EED2B1155A6004476EA /* UserStatView.swift in Sources */,
