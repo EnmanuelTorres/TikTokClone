@@ -46,6 +46,9 @@
 		4EF68F232B164F70004476EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F222B164F70004476EA /* User.swift */; };
 		4EF68F262B1650B4004476EA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F252B1650B4004476EA /* UserService.swift */; };
 		4EF68F282B165735004476EA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4EF68F272B165735004476EA /* FirebaseFirestoreSwift */; };
+		4EF68F2A2B167FEA004476EA /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F292B167FEA004476EA /* PreviewProvider.swift */; };
+		4EF68F2E2B1684EA004476EA /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F2D2B1684EA004476EA /* ExploreViewModel.swift */; };
+		4EF68F302B16940A004476EA /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F2F2B16940A004476EA /* MockUserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +82,9 @@
 		4EF68F202B15657D004476EA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		4EF68F222B164F70004476EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4EF68F252B1650B4004476EA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		4EF68F292B167FEA004476EA /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		4EF68F2D2B1684EA004476EA /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		4EF68F2F2B16940A004476EA /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF68F252B1650B4004476EA /* UserService.swift */,
+				4EF68F2F2B16940A004476EA /* MockUserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 		4EF68EC92B10F5E8004476EA /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68F292B167FEA004476EA /* PreviewProvider.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -218,8 +226,8 @@
 		4EF68ECE2B10F6BA004476EA /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				4EF68EDC2B1118DE004476EA /* ExploreView.swift */,
-				4EF68EDE2B1118F9004476EA /* UserCell.swift */,
+				4EF68F2C2B16847F004476EA /* View */,
+				4EF68F2B2B16847A004476EA /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -378,6 +386,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4EF68F2B2B16847A004476EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EF68F2D2B1684EA004476EA /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4EF68F2C2B16847F004476EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EF68EDC2B1118DE004476EA /* ExploreView.swift */,
+				4EF68EDE2B1118F9004476EA /* UserCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,6 +496,7 @@
 				4EF68ED92B1101CE004476EA /* FeedView.swift in Sources */,
 				4EF68EFF2B14E946004476EA /* RegistrationView.swift in Sources */,
 				4EF68F262B1650B4004476EA /* UserService.swift in Sources */,
+				4EF68F2A2B167FEA004476EA /* PreviewProvider.swift in Sources */,
 				4EF68EE72B115045004476EA /* ProfileHeaderView.swift in Sources */,
 				4EF68EED2B1155A6004476EA /* UserStatView.swift in Sources */,
 				4EF68F122B152B2B004476EA /* AuthService.swift in Sources */,
@@ -483,6 +509,8 @@
 				4EF68F162B1531AB004476EA /* RegistrationViewModel.swift in Sources */,
 				4EF68EE32B114401004476EA /* NotificationCell.swift in Sources */,
 				4EF68EFD2B14E933004476EA /* LoginView.swift in Sources */,
+				4EF68F2E2B1684EA004476EA /* ExploreViewModel.swift in Sources */,
+				4EF68F302B16940A004476EA /* MockUserService.swift in Sources */,
 				4EF68EE12B1143F0004476EA /* NotificationView.swift in Sources */,
 				4EF68F012B14EE57004476EA /* StandardTextFieldModifier.swift in Sources */,
 				4EF68EB92B10E071004476EA /* TikTokCloneApp.swift in Sources */,

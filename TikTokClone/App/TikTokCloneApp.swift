@@ -22,8 +22,6 @@ struct TikTokCloneApp: App {
     
     private let authService = AuthService(userService: UserService())
     
-    
-    
     var body: some Scene {
         WindowGroup {
             ContentView(authService: authService)
