@@ -104,5 +104,5 @@ extension RegistrationView: AuthenticationFormProtocol {
 }
 
 #Preview {
-    RegistrationView(authService: AuthService())
+    RegistrationView(authService: AuthService(userService: UserService()))
 }

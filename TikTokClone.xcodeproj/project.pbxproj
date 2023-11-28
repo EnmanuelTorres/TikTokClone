@@ -43,6 +43,9 @@
 		4EF68F1D2B156255004476EA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EF68F1C2B156255004476EA /* FirebaseFirestore */; };
 		4EF68F1F2B156268004476EA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4EF68F1E2B156268004476EA /* FirebaseStorage */; };
 		4EF68F212B15657D004476EA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F202B15657D004476EA /* ContentViewModel.swift */; };
+		4EF68F232B164F70004476EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F222B164F70004476EA /* User.swift */; };
+		4EF68F262B1650B4004476EA /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F252B1650B4004476EA /* UserService.swift */; };
+		4EF68F282B165735004476EA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4EF68F272B165735004476EA /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +77,8 @@
 		4EF68F132B152D28004476EA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4EF68F152B1531AB004476EA /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		4EF68F202B15657D004476EA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		4EF68F222B164F70004476EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4EF68F252B1650B4004476EA /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 				4EF68F1F2B156268004476EA /* FirebaseStorage in Frameworks */,
 				4EF68F192B156236004476EA /* FirebaseAuth in Frameworks */,
 				4EF68F082B150DD1004476EA /* FirebaseAnalytics in Frameworks */,
+				4EF68F282B165735004476EA /* FirebaseFirestoreSwift in Frameworks */,
 				4EF68F0A2B150DD1004476EA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				4EF68F1D2B156255004476EA /* FirebaseFirestore in Frameworks */,
 				4EF68F102B150DD1004476EA /* FirebaseAppCheck in Frameworks */,
@@ -148,6 +154,7 @@
 		4EF68EC72B10F5E2004476EA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4EF68F252B1650B4004476EA /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF68EEE2B1171ED004476EA /* Post.swift */,
+				4EF68F222B164F70004476EA /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -396,6 +404,7 @@
 				4EF68F1A2B156248004476EA /* FirebaseDatabaseSwift */,
 				4EF68F1C2B156255004476EA /* FirebaseFirestore */,
 				4EF68F1E2B156268004476EA /* FirebaseStorage */,
+				4EF68F272B165735004476EA /* FirebaseFirestoreSwift */,
 			);
 			productName = TikTokClone;
 			productReference = 4EF68EB52B10E071004476EA /* TikTokClone.app */;
@@ -458,8 +467,10 @@
 				4EF68EE52B114F7F004476EA /* CurrentUserProfileView.swift in Sources */,
 				4EF68EF62B117C01004476EA /* CustomVideoPlayer.swift in Sources */,
 				4EF68F142B152D29004476EA /* LoginViewModel.swift in Sources */,
+				4EF68F232B164F70004476EA /* User.swift in Sources */,
 				4EF68ED92B1101CE004476EA /* FeedView.swift in Sources */,
 				4EF68EFF2B14E946004476EA /* RegistrationView.swift in Sources */,
+				4EF68F262B1650B4004476EA /* UserService.swift in Sources */,
 				4EF68EE72B115045004476EA /* ProfileHeaderView.swift in Sources */,
 				4EF68EED2B1155A6004476EA /* UserStatView.swift in Sources */,
 				4EF68F122B152B2B004476EA /* AuthService.swift in Sources */,
@@ -741,6 +752,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4EF68F062B150DD1004476EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		4EF68F272B165735004476EA /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EF68F062B150DD1004476EA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

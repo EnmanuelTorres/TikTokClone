@@ -32,5 +32,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(authService: AuthService())
+    ContentView(authService: AuthService(userService: UserService()))
 }

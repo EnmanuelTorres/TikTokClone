@@ -38,7 +38,10 @@ struct MainTabView: View {
                         Text("Friend")
                     }
                 }
-                .onAppear{ selectedTab = 1 }
+                .onAppear{
+                    selectedTab = 1
+                
+                }
                 .tag(1)
             
             Text("Upload Post")
@@ -71,5 +74,5 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView(authService: AuthService())
+    MainTabView(authService: AuthService(userService: UserService()))
 }
