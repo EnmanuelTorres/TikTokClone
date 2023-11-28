@@ -16,6 +16,7 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                
                 Spacer()
                 // logo image
                 Image("tiktok-app-icon")

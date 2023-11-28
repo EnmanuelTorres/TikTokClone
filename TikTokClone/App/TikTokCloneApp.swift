@@ -22,8 +22,7 @@ struct TikTokCloneApp: App {
     
     var body: some Scene {
         WindowGroup {
-         //  MainTabView()
-            LoginView()
+        ContentView()
         }
     }
 }

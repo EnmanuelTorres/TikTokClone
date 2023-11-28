@@ -15,6 +15,9 @@ class RegistrationViewModel: ObservableObject {
         self.authService = authService
     }
     
+    
+    
+   
     func createUser(withEmail email: String, password: String, username: String, fullName: String) async {
         do{
             try await authService.createUser(withEmail: email,
