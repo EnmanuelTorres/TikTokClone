@@ -20,7 +20,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct TikTokCloneApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
-    private let authService = AuthService(userService: UserService())
+    private let authService = AuthService(userService: UserService(),
+                                          uploadUserService: UploadUserService())
     
     var body: some Scene {
         WindowGroup {

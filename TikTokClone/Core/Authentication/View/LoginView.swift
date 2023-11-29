@@ -104,5 +104,6 @@ extension LoginView: AuthenticationFormProtocol {
 }
 
 #Preview {
-    LoginView(authService: AuthService(userService: UserService()))
+    LoginView(authService: AuthService(userService: UserService(),
+                                       uploadUserService: UploadUserService()))
 }

@@ -11,16 +11,28 @@ struct ExploreView: View {
     
     @StateObject var viewModel = ExploreViewModel(userService: MockUserService())
     
+    private var uploadUserService : UploadUserService
+    
+    init(uploadUserService : UploadUserService) {
+        self.uploadUserService = uploadUserService
+    }
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 16) {
                     ForEach(viewModel.users) { user in
-                        UserCell(user: user)
-                            .padding(.horizontal)
+                        NavigationLink(value: user) {
+                            UserCell(user: user)
+                                .padding(.horizontal)
+                        }
                     }
                 }
             }
+            .navigationDestination(for: User.self, destination: { user in
+                UserProfileView(user: user)
+                //AuthService(userService: UserService())
+            })
             .navigationTitle("Explore")
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top)
@@ -30,5 +42,5 @@ struct ExploreView: View {
 }
 
 #Preview {
-    ExploreView()
+    ExploreView(uploadUserService: UploadUserService())
 }

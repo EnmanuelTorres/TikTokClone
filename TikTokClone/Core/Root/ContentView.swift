@@ -13,6 +13,7 @@ struct ContentView: View {
     
     private let authService: AuthService
     
+    
     init(authService: AuthService) {
         self.authService = authService
         
@@ -32,5 +33,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(authService: AuthService(userService: UserService()))
+    ContentView(authService: AuthService(userService: UserService(),
+                                         uploadUserService: UploadUserService()))
 }

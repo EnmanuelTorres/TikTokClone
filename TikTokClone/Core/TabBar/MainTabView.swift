@@ -13,8 +13,12 @@ struct MainTabView: View {
     
     private let authService: AuthService
     
+    private let uploadUserService = UploadUserService()
+    
+    
     init( authService: AuthService) {
         self.authService = authService
+        
     }
     
     var body: some View {
@@ -30,7 +34,7 @@ struct MainTabView: View {
                 .onAppear{ selectedTab = 0 }
                 .tag(0)
             
-            ExploreView()
+            ExploreView(uploadUserService: uploadUserService)
                 .tabItem {
                     VStack {
                         Image(systemName: selectedTab == 1 ? "person.2.fill" : "person.2")
@@ -74,5 +78,6 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView(authService: AuthService(userService: UserService()))
+    MainTabView(authService: AuthService(userService: UserService(),
+                                         uploadUserService: UploadUserService()))
 }

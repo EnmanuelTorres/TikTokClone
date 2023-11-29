@@ -13,10 +13,12 @@ import FirebaseAuth
 class AuthService {
     
     @Published var userSession: FirebaseAuth.User?
-    private let userService : UserService
+    private let userService : UserServiceProtocol
+    public let uploadUserService: UploadUserService
     
-    init(userService : UserService) {
+    init(userService : UserServiceProtocol, uploadUserService: UploadUserService) {
         self.userService = userService
+        self.uploadUserService = uploadUserService
     }
     
     func updatedUserSession() {
@@ -68,6 +70,7 @@ class AuthService {
                         email: email,
                         fullname: fullName)
         
-     try await userService.uploadUserData(user)
+     try await uploadUserService.uploadUserData(user)
+     
     }
 }
