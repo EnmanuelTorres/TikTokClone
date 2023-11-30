@@ -50,6 +50,7 @@
 		4EF68F2E2B1684EA004476EA /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F2D2B1684EA004476EA /* ExploreViewModel.swift */; };
 		4EF68F302B16940A004476EA /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F2F2B16940A004476EA /* MockUserService.swift */; };
 		4EF68F322B17F836004476EA /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F312B17F836004476EA /* UserProfileView.swift */; };
+		4EF68F342B180882004476EA /* Firestore+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF68F332B180882004476EA /* Firestore+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		4EF68F2D2B1684EA004476EA /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		4EF68F2F2B16940A004476EA /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
 		4EF68F312B17F836004476EA /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		4EF68F332B180882004476EA /* Firestore+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firestore+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF68F002B14EE57004476EA /* StandardTextFieldModifier.swift */,
+				4EF68F332B180882004476EA /* Firestore+Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				4EF68F212B15657D004476EA /* ContentViewModel.swift in Sources */,
 				4EF68EDB2B1105F2004476EA /* FeedCell.swift in Sources */,
 				4EF68EF42B11738C004476EA /* FeedViewModel.swift in Sources */,
+				4EF68F342B180882004476EA /* Firestore+Constants.swift in Sources */,
 				4EF68EEF2B1171ED004476EA /* Post.swift in Sources */,
 				4EF68EBB2B10E071004476EA /* ContentView.swift in Sources */,
 				4EF68F032B1505F9004476EA /* AuthenticationFormProtocol.swift in Sources */,

@@ -31,7 +31,6 @@ struct ExploreView: View {
             }
             .navigationDestination(for: User.self, destination: { user in
                 UserProfileView(user: user)
-                //AuthService(userService: UserService())
             })
             .navigationTitle("Explore")
             .navigationBarTitleDisplayMode(.inline)
